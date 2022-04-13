@@ -1,6 +1,6 @@
 name: Build and verify PR
 on:
-  pullrequest
+  pull_request
 
 jobs:
   build:
