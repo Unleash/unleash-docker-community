@@ -47,4 +47,6 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: NODE_VERSION=${{ matrix.version }},SOURCE_FOLDER=${{ matrix.folder }}
+          build-args:
+            - NODE_VERSION=${{ matrix.version }}
+            - SOURCE_FOLDER=${{ matrix.folder }}
