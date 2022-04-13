@@ -11,8 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: [14-alpine, 16-alpine]
-        folder: [azure]
+        version:
+          - 14-alpine
+          - 16-alpine
+        folder:
+          - azure
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -33,8 +36,8 @@ jobs:
             unleashorg/unleash-community-${{ matrix.folder }}
           tags: 
             type=edge,suffix=-${{ matrix.version }}
-            type=semver,pattern={{ version }},event=tag
-            type=semver,pattern={{ major.minor }},event=tag
+            type=semver,pattern={{ version }},event=tag,suffix=-${{ matrix.version }}
+            type=semver,pattern={{ major.minor }},event=tag,suffix=-${{ matrix.version }}
       - name: Build tag and push image to Docker hub
         uses: docker/build-push-action@v2
         with:
