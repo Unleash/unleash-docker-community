@@ -5,7 +5,7 @@ FROM node:$NODE_VERSION as builder
 
 WORKDIR /unleash
 
-COPY playforms/$SOURCE_FOLDER/* ./
+COPY platforms/$SOURCE_FOLDER/* ./
 
 RUN yarn install --frozen-lockfile --production=true
 
