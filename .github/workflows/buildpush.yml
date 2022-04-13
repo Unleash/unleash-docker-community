@@ -43,9 +43,10 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
+          context: platforms/${{ matrix.folder }}
           tags: ${{ steps.meta.outputs.tags }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            NODE_VERSION=${{ matrix.version }},SOURCE_FOLDER=${{ matrix.folder }}
+            NODE_VERSION=${{ matrix.version }}

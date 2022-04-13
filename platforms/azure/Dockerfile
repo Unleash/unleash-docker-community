@@ -1,11 +1,10 @@
 ARG NODE_VERSION
-ARG SOURCE_FOLDER
 
 FROM node:$NODE_VERSION as builder
 
 WORKDIR /unleash
 
-COPY platforms/$SOURCE_FOLDER/* ./
+COPY . ./
 
 RUN yarn install --frozen-lockfile --production=true
 
