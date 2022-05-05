@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version:
-          - 16-alpine
         folder:
           - azure
     steps:
@@ -34,7 +32,6 @@ jobs:
           tags:
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
       - name: Build tag and push image to Docker hub
         uses: docker/build-push-action@v2
         with:
