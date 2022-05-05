@@ -10,7 +10,6 @@ jobs:
     strategy:
       matrix:
         version:
-          - 14-alpine
           - 16-alpine
         folder:
           - azure
@@ -33,9 +32,9 @@ jobs:
           images: |
             unleashorg/unleash-community-${{ matrix.folder }}
           tags:
-            type=semver,pattern={{version}},suffix=-${{ matrix.version }}
-            type=semver,pattern={{major}}.{{minor}},suffix=-${{ matrix.version }}
-            type=semver,pattern={{major}},suffix=-${{ matrix.version }}
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
       - name: Build tag and push image to Docker hub
         uses: docker/build-push-action@v2
         with:
@@ -47,4 +46,4 @@ jobs:
           cache-to: type=gha,mode=max
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            NODE_VERSION=${{ matrix.version }}
+            NODE_VERSION=16-alpine
