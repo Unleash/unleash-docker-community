@@ -19,9 +19,9 @@
     "unleash-server": "4.10.0"
   },
   "devDependencies": {
-    "execa": "^5.1.1",
-    "tempy": "^1.0.0",
-    "yargs": "^17.2.1"
+    "execa": "5.1.1",
+    "tempy": "1.0.1",
+    "yargs": "17.4.1"
   },
   "resolutions": {
     "db-migrate/rc/minimist": "^1.2.5",
