@@ -16,7 +16,7 @@
     "basic-auth": "^2.0.1",
     "passport": "^0.5.2",
     "passport-azure-ad": "^4.3.1",
-    "unleash-server": "4.10.0"
+    "unleash-server": "4.14.5"
   },
   "devDependencies": {
     "execa": "5.1.1",
