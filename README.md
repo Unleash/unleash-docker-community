@@ -3,8 +3,8 @@
 
 **Useful links:**
 
-- [Docker image on dockerhub](https://hub.docker.com/r/unleashorg/unleash-server/)
-- [Unleash Helm Chart on artifacthub](https://artifacthub.io/packages/helm/unleash/unleash)
+- [Azure Community Docker image on dockerhub](https://hub.docker.com/r/unleashorg/unleash-community-azure)
+- [Official Unleash Helm Chart on artifacthub](https://artifacthub.io/packages/helm/unleash/unleash)
 
 **Steps:**
 
@@ -12,57 +12,34 @@
 2. Start a postgres database:
 
 ```sh
-docker run -e POSTGRES_PASSWORD=some_password \
+docker run -d -e POSTGRES_PASSWORD=some_password \
   -e POSTGRES_USER=unleash_user -e POSTGRES_DB=unleash \
   --network unleash --name postgres postgres
 ```
 
 3. Start Unleash via docker:
 
+See `index.js` and `auth-hook.js` example implementations for azure within the [example repository](https://github.com/Unleash/unleash-examples/tree/main/v4/securing-azure-auth).
+
 ```sh
 docker run -p 4242:4242 \
   -e DATABASE_HOST=postgres -e DATABASE_NAME=unleash \
   -e DATABASE_USERNAME=unleash_user -e DATABASE_PASSWORD=some_password \
   -e DATABASE_SSL=false \
-  --network unleash unleashorg/unleash-server
+  -e BASE_URI_PATH= \
+  -e UNLEASH_AUTH_TENANT_ID={AZURE_TENANT_ID} \
+  -e UNLEASH_AUTH_CLIENT_ID={AZURE_CLIENT_ID} \
+  -e UNLEASH_AUTH_CLIENT_SECRET={AZURE_CLIENT_SECRET} \
+  -e UNLEASH_HOST=http://localhost:4242 \
+  -v $(pwd)/index.js:/unleash/index.js \
+  -v $(pwd)/azure-hook.js:/unleash/auth-hook.js \
+  --network unleash unleashorg/unleash-community-azure
 ```
 
 All configuration options [available in our documentation](https://docs.getunleash.io/docs/deploy/configuring_unleash). 
 
 ### User accounts
-- Once started up, you'll have a user with 
-  - `username: admin`
-  - `password: unleash4all`
-
-This user is an admin user and can be used to create other users, we do suggest you change the password :)
-
-#### Docker-compose
-
-1. Clone the [unleash-docker](https://github.com/Unleash/unleash-docker) repository.
-2. Run `docker-compose build` in repository root folder.
-3. Run `docker-compose up` in repository root folder.
-
-
-
-## Work locally with this repo 
-Start by cloning this repository. 
-
-We have set up `docker-compose` to start postgres and the unleash server together. This makes it really fast to start up
-unleash locally without setting up a database or node.
-
-```bash
-$ docker-compose build
-$ docker-compose up
-```
-
-### Requirements
-We are using docker-compose version 3.9 and it requires:
-
-- Docker engine 19.03.0+
-- Docker compose 2.0.0+
-
-For more info, check out the compatibility matrix on Docker's website: [compatibility-matrix](
-https://docs.docker.com/compose/compose-file/compose-versioning/#compatibility-matrix)
+- Once started up, you'll have to use the OIDC provider with your credentials.
 
 ### Building the docker image
 We expect a build-arg for which node-version to build with so if you're building using the docker cli, you have to use `--build-arg NODE_VERSION=14-alpine` OR `--build-arg NODE_VERSION=16-alpine`
