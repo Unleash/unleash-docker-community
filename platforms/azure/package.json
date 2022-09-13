@@ -14,7 +14,7 @@
   "dependencies": {
     "@passport-next/passport": "^3.1.0",
     "basic-auth": "^2.0.1",
-    "passport": "^0.5.2",
+    "passport": "^0.6.0",
     "passport-azure-ad": "^4.3.1",
     "unleash-server": "4.15.1"
   },
