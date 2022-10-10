@@ -1,7 +1,8 @@
 name: Create tag on updated version
 on:
   push:
-    branch: "main"
+    branches:
+     - main
 
 jobs:
   create-tag:
