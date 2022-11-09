@@ -2930,10 +2930,10 @@ unleash-client@3.16.0:
     murmurhash3js "^3.0.1"
     semver "^7.3.5"
 
-unleash-server@4.17.1:
-  version "4.17.1"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.17.1.tgz#b93c65637c502e4bc70d7dc33eff16c8f5fd354b"
-  integrity sha512-5IUBe2cN+3aHiSomQFkHdcb7s35k51GpdMrBUTYD8RsonowS6be82JujDcMVRpScZDKyMVhfeOm8ngVF566jqg==
+unleash-server@4.17.2:
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.17.2.tgz#0388b91a4e80e751109d62ad6c025056de3b28b2"
+  integrity sha512-0rfn4PfFUA2ZR6GIXM6kxt2SuFRX9lbzSAn0h4Jf73FymNNqUCa/pwcz3uB9YRb2+EwzBP+sqbO320qBVcO59Q==
   dependencies:
     "@unleash/express-openapi" "^0.2.1"
     ajv "^8.11.0"
