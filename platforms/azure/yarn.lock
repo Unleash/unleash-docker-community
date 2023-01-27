@@ -1690,7 +1690,7 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-make-fetch-happen@^10.0.0:
+make-fetch-happen@^10.2.1:
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.2.1.tgz#f5e3835c5e9817b617f2770870d9492d28678164"
   integrity sha512-NgOPbRiaQM10DYXvN3/hhGVI2M5MtITFryzBGxHM5p4wnFxsVCbxkrBrDsk+EZ5OB4jEOT7AjDxtdF+KVEFT7w==
@@ -2931,20 +2931,20 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unleash-client@3.16.0:
-  version "3.16.0"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-3.16.0.tgz#f4d8100d10d86f4a3e51ad660b364d50e1aadfca"
-  integrity sha512-oqnAKIt7WLSw1t9L1dJLZGpXb7rRh8FPo40R8x7lTW5Hyd1dMAUS3AKvwfMLXm+Mszl8wWs+VXdr/00Mva2tBw==
+unleash-client@3.16.1:
+  version "3.16.1"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-3.16.1.tgz#81eede77202789eb20eda126d9c7747567bb0628"
+  integrity sha512-N8c0b2B8LFjfDErCJYMZfAPRZiRRGYFZ0aBLRMnpA1K5iFm/I/TH91UgAGsylOsWngnUKXTST7kYeDgK1Aydug==
   dependencies:
     ip "^1.1.5"
-    make-fetch-happen "^10.0.0"
+    make-fetch-happen "^10.2.1"
     murmurhash3js "^3.0.1"
     semver "^7.3.5"
 
-unleash-server@4.19.4:
-  version "4.19.4"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.19.4.tgz#4b2978e414a33d8952e8562abd4fb03486591876"
-  integrity sha512-Tvnj3ye4JG2htkC7Qjbtew5opGobp779wiufYbMJWZmHWr4NrzEXZjZ6yf5g8xOVdiRZx4oo707JypGRWPPOXg==
+unleash-server@4.20.0:
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.20.0.tgz#c999fbf8c9e363b149e6697d252c2d57826804c6"
+  integrity sha512-5d0/G+sjMa/4eFlYYtPyX8dRHdP69QKlXndpnt4HcL9Mgz3xPQbx6F3c70mTE45GNrGXypNvroUYfpMQCEY39Q==
   dependencies:
     "@unleash/express-openapi" "^0.2.1"
     ajv "^8.11.0"
@@ -2996,9 +2996,9 @@ unleash-server@4.19.4:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
-    unleash-client "3.16.0"
+    unleash-client "3.16.1"
     use-deep-compare-effect "^1.8.1"
-    uuid "^8.3.2"
+    uuid "^9.0.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -3039,6 +3039,11 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+uuid@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
+  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 valid-url@^1.0.6:
   version "1.0.9"
