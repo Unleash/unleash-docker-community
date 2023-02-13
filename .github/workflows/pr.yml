@@ -12,6 +12,7 @@ jobs:
           - 16-alpine
         folder:
           - azure
+          - openid-connect
     steps:
       - name: Checkout
         uses: actions/checkout@v3
