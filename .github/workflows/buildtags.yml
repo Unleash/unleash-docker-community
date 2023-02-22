@@ -11,6 +11,7 @@ jobs:
       matrix:
         folder:
           - azure
+          - openid-connect
     steps:
       - name: Checkout
         uses: actions/checkout@v3

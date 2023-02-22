@@ -4,6 +4,7 @@
 **Useful links:**
 
 - [Azure Community Docker image on dockerhub](https://hub.docker.com/r/unleashorg/unleash-community-azure)
+- [OpenID Connect Community Docker image on dockerhub](https://hub.docker.com/r/unleashorg/unleash-community-openid-connect)
 - [Official Unleash Helm Chart on artifacthub](https://artifacthub.io/packages/helm/unleash/unleash)
 
 **Steps:**

@@ -11,6 +11,7 @@ jobs:
       matrix:
         folder:
           - azure
+          - openid-connect
     outputs:
       version: ${{ steps.retrieve-version.outputs.version }}
     steps:
