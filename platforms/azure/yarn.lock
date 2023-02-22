@@ -1673,6 +1673,13 @@ lru-cache@4.0.0:
     pseudomap "^1.0.1"
     yallist "^2.0.0"
 
+lru-cache@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+  integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
+  dependencies:
+    yallist "^4.0.0"
+
 lru-cache@^7.4.0:
   version "7.7.3"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.3.tgz#98cd19eef89ce6a4a3c4502c17c833888677c252"
@@ -2552,6 +2559,13 @@ semver@^7.3.5:
   dependencies:
     lru-cache "^7.4.0"
 
+semver@^7.3.8:
+  version "7.3.8"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.8.tgz#07a78feafb3f7b32347d725e33de7e2a2df67798"
+  integrity sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==
+  dependencies:
+    lru-cache "^6.0.0"
+
 send@0.18.0:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/send/-/send-0.18.0.tgz#670167cc654b05f5aa4a767f9113bb371bc706be"
@@ -2931,20 +2945,20 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unleash-client@3.16.1:
-  version "3.16.1"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-3.16.1.tgz#81eede77202789eb20eda126d9c7747567bb0628"
-  integrity sha512-N8c0b2B8LFjfDErCJYMZfAPRZiRRGYFZ0aBLRMnpA1K5iFm/I/TH91UgAGsylOsWngnUKXTST7kYeDgK1Aydug==
+unleash-client@3.18.1:
+  version "3.18.1"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-3.18.1.tgz#d9e928f3cf0c11dafce27bae298b183b28615b4d"
+  integrity sha512-fWVxeas4XzXkPPkTxLr2MKVvN4DUkYDVOKDG9zlnqQnmWvZQjLnRqOCOvf/vFkd4qJj+4fSWIYKTrMYQIpNUKw==
   dependencies:
-    ip "^1.1.5"
+    ip "^1.1.8"
     make-fetch-happen "^10.2.1"
     murmurhash3js "^3.0.1"
-    semver "^7.3.5"
+    semver "^7.3.8"
 
-unleash-server@4.20.5:
-  version "4.20.5"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.20.5.tgz#f4d2402d41e19c84daf27efaa8ffb6ccfc347a52"
-  integrity sha512-O1OGaPj5lm2o8Qt9pG8/j14zCDdxZrGhDhexEdPasmY1vB8tvgs09w5n0YhhzsMQeM8Cavtn+lpeoRck7TH6ZA==
+unleash-server@4.21.0:
+  version "4.21.0"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.21.0.tgz#0b7366af604d69a2ea63b6b93d95730d3aa15958"
+  integrity sha512-qvuynxv0xrGWzHF51OL0zbTlOiAO9I+ka5Ztryf2OBy/gtCAmJeY9OwJimC3kTwZ42Rzj7oGkDrqVD4IhbiG1Q==
   dependencies:
     "@unleash/express-openapi" "^0.2.1"
     ajv "^8.11.0"
@@ -2996,7 +3010,7 @@ unleash-server@4.20.5:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
-    unleash-client "3.16.1"
+    unleash-client "3.18.1"
     use-deep-compare-effect "^1.8.1"
     uuid "^9.0.0"
 
