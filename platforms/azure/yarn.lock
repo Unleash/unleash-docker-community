@@ -130,10 +130,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
-"@unleash/express-openapi@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@unleash/express-openapi/-/express-openapi-0.2.1.tgz#ecbba742dad0a05c1563f35e3272ee3671dc478d"
-  integrity sha512-wvwgSrzMGo3khB2E/xPLXlB/uT6FruszIsUDThJpttILtxBmj1SDWb0L6SG1CQ2tlnC786/6+0iSBwcz0fViOg==
+"@unleash/express-openapi@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@unleash/express-openapi/-/express-openapi-0.2.2.tgz#b6e6a3d0fb93f8f52fc7d8f375e9bb52a3d3a46e"
+  integrity sha512-Evn1gVB5v7QMAs/mGjTc3NihX9wZnMdyBPvpd/JqMI8NDH9z/q46cYnh2t7bFPQj7FBghWwZlcJNm7PU0bxe7A==
   dependencies:
     ajv "^6.10.2"
     http-errors "^1.7.3"
@@ -784,6 +784,11 @@ deep-extend@^0.6.0:
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
   integrity sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
 
+deep-object-diff@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/deep-object-diff/-/deep-object-diff-1.1.9.tgz#6df7ef035ad6a0caa44479c536ed7b02570f4595"
+  integrity sha512-Rn+RuwkmkDwCi2/oXOFS9Gsr5lJZu/yTGpK7wAaAIE75CC+LCGEZHpY6VQJa/RoJcrmaA/docWJZvYohlNkWPA==
+
 deepmerge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
@@ -1248,6 +1253,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hash-sum@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hash-sum/-/hash-sum-2.0.0.tgz#81d01bb5de8ea4a214ad5d6ead1b523460b0b45a"
+  integrity sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
+
 helmet@^6.0.0:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/helmet/-/helmet-6.0.1.tgz#52ec353638b2e87f14fe079d142b368ac11e79a4"
@@ -1591,6 +1601,26 @@ knex@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/knex/-/knex-2.2.0.tgz#86a3176924d37303b3f9ff7f70087418c263ce7a"
   integrity sha512-yhm1Qe9Ok0TeXBq3nNHqZYJPrQ4Iw2tq9k/HxjrZ/EWec2ifOjJlkNHr26v8cQrWtk5iG3iwfUazTIWy+VKG5g==
+  dependencies:
+    colorette "2.0.19"
+    commander "^9.1.0"
+    debug "4.3.4"
+    escalade "^3.1.1"
+    esm "^3.2.25"
+    get-package-type "^0.1.0"
+    getopts "2.3.0"
+    interpret "^2.2.0"
+    lodash "^4.17.21"
+    pg-connection-string "2.5.0"
+    rechoir "^0.8.0"
+    resolve-from "^5.0.0"
+    tarn "^3.0.2"
+    tildify "2.0.0"
+
+knex@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-2.4.2.tgz#a34a289d38406dc19a0447a78eeaf2d16ebedd61"
+  integrity sha512-tMI1M7a+xwHhPxjbl/H9K1kHX+VncEYcvCx5K00M16bWvpYPKAZd6QrCu68PtHAdIZNQPWZn0GVhqVBEthGWCg==
   dependencies:
     colorette "2.0.19"
     commander "^9.1.0"
@@ -2955,12 +2985,12 @@ unleash-client@3.18.1:
     murmurhash3js "^3.0.1"
     semver "^7.3.8"
 
-unleash-server@4.21.1:
-  version "4.21.1"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.21.1.tgz#480d4889d862f9b71f616749f57680da754e4a0d"
-  integrity sha512-b66d8Ki9eBMZYjJImZGPCVkyZVXYaQ8ALfMV8xGhEUEWXVATdOf8DAIRPrPDg1MiYkTS1PaaEd0J+tyESO9F3A==
+unleash-server@4.22.0:
+  version "4.22.0"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-4.22.0.tgz#fd2bfef90496d097e200f4483f0e0523a82e1aa0"
+  integrity sha512-OD1OEjShTmWy2cwrK7zENRxRB+mpsespwKo4qNGCsGd4nUCRw241f0yQTi6asYD8m5U8ZqdQmsp20aJL0lFOPQ==
   dependencies:
-    "@unleash/express-openapi" "^0.2.1"
+    "@unleash/express-openapi" "^0.2.2"
     ajv "^8.11.0"
     ajv-formats "^2.1.1"
     async "^3.2.4"
@@ -2974,6 +3004,7 @@ unleash-server@4.21.1:
     db-migrate "0.11.13"
     db-migrate-pg "1.2.2"
     db-migrate-shared "1.2.0"
+    deep-object-diff "^1.1.9"
     deepmerge "^4.2.2"
     errorhandler "^1.5.1"
     express "^4.18.2"
@@ -2981,6 +3012,7 @@ unleash-server@4.21.1:
     express-session "^1.17.1"
     fast-json-patch "^3.1.0"
     gravatar-url "^3.1.0"
+    hash-sum "^2.0.0"
     helmet "^6.0.0"
     ip "^1.1.8"
     joi "^17.3.0"
@@ -2988,7 +3020,7 @@ unleash-server@4.21.1:
     js-yaml "^4.1.0"
     json-schema-to-ts "2.6.0"
     json2csv "^5.0.7"
-    knex "^2.0.0"
+    knex "^2.4.2"
     log4js "^6.0.0"
     make-fetch-happen "^11.0.0"
     memoizee "^0.4.15"
