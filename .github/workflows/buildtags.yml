@@ -1,8 +1,9 @@
 name: Build and publish tag
 on:
-  push:
-    tags:
-      - '*'
+  workflow_run:
+    workflows: ["Create tag on updated version"]
+    types:
+      - completed
 
 jobs:
   build:
