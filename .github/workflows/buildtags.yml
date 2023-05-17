@@ -16,6 +16,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - id: retrieve-version
+        run: |
+          PACKAGE_VERSION=$(cat platforms/${{ matrix.folder }}/package.json \
+          | grep unleash-server \
+          | head -1 \
+          | awk -F: '{ print $2 }' \
+          | sed 's/[", ]//g')
+          MAJOR=$(echo $PACKAGE_VERSION | cut -d. -f1)
+          MINOR=$(echo $PACKAGE_VERSION | cut -d. -f2)
+          echo "::set-output name=version::${PACKAGE_VERSION}"
+          echo "::set-output name=major::${MAJOR}"
+          echo "::set-output name=minor::${MINOR}"
       - name: Setup QEmu so we can build multiplatform
         uses: docker/setup-qemu-action@v2
       - name: Login to docker hub
@@ -32,9 +44,9 @@ jobs:
           images: |
             unleashorg/unleash-community-${{ matrix.folder }}
           tags: |
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
+            type=semver,pattern={{version}},value=${{ steps.retrieve-version.outputs.version }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ steps.retrieve-version.outputs.major }}.${{ steps.retrieve-version.outputs.minor }}
+            type=semver,pattern={{major}},value=${{ steps.retrieve-version.outputs.major }}
       - name: Build tag and push image to Docker hub
         uses: docker/build-push-action@v4
         with:
