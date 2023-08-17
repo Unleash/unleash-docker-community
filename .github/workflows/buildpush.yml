@@ -10,8 +10,8 @@ jobs:
     strategy:
       matrix:
         version:
-          - 14-alpine
-          - 16-alpine
+          - 18-alpine
+          - 20-alpine
         folder:
           - azure
           - openid-connect
