@@ -3070,10 +3070,10 @@ unleash-client@5.0.0:
     murmurhash3js "^3.0.1"
     semver "^7.5.3"
 
-unleash-server@5.8.0:
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-5.8.0.tgz#103d9df8d979ed9143459dcb4651dc316a417273"
-  integrity sha512-na3/4GGEAxbUS/3SwoSJZmtvFY1Ov/a+y+9OU/2tZO/7RwSPuWxpWqaVL73GL1xcH7fyXjS8FZH/BP0Ft37Xjg==
+unleash-server@5.8.1:
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-5.8.1.tgz#444cd2fc471af17c86f3df186645ca214975e7dc"
+  integrity sha512-kyAnUjZEcmcmGim7MaHnJEZKG5P1WfzEWR4rbB/VXywXSQr8eHdfEKB9yB3Gx71BcjIX+/GuUO3nSnAqARegoQ==
   dependencies:
     "@slack/web-api" "^6.10.0"
     "@wesleytodd/openapi" "^0.3.0"
