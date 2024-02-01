@@ -1703,14 +1703,14 @@ json-pointer@0.6.2, json-pointer@^0.6.2:
   dependencies:
     foreach "^2.0.4"
 
-json-schema-to-ts@2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/json-schema-to-ts/-/json-schema-to-ts-2.9.2.tgz#a054bc6410f13c7a2fc51aeabac52292e885b98d"
-  integrity sha512-h9WqLkTVpBbiaPb5OmeUpz/FBLS/kvIJw4oRCPiEisIu2WjMh+aai0QIY2LoOhRFx5r92taGLcerIrzxKBAP6g==
+json-schema-to-ts@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/json-schema-to-ts/-/json-schema-to-ts-2.12.0.tgz#fd8bc79cebadc7bee5be1e32b289f4f7e1c2e4ae"
+  integrity sha512-uTde38yBm5lzJSRPWRaasxZo72pb+JGE4iUksNdNfAkFaLhV4N9akeBxPPUpZy5onINt9Zo0oTLrAoEXyZESiQ==
   dependencies:
     "@babel/runtime" "^7.18.3"
     "@types/json-schema" "^7.0.9"
-    ts-algebra "^1.2.0"
+    ts-algebra "^1.2.2"
 
 json-schema-traverse@^0.4.1:
   version "0.4.1"
@@ -3429,10 +3429,10 @@ truncate-utf8-bytes@^1.0.0:
   dependencies:
     utf8-byte-length "^1.0.1"
 
-ts-algebra@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/ts-algebra/-/ts-algebra-1.2.0.tgz#f91c481207a770f0d14d055c376cbee040afdfc9"
-  integrity sha512-kMuJJd8B2N/swCvIvn1hIFcIOrLGbWl9m/J6O3kHx9VRaevh00nvgjPiEGaRee7DRaAczMYR2uwWvXU22VFltw==
+ts-algebra@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/ts-algebra/-/ts-algebra-1.2.2.tgz#b75d301c28cd4126cd344760a47b43e48e2872e0"
+  integrity sha512-kloPhf1hq3JbCPOTYoOWDKxebWjNb2o/LKnNfkWhxVVisFFmMJPPdJeGoGmM+iRLyoXAR61e08Pb+vUXINg8aA==
 
 ts-toolbelt@^9.6.0:
   version "9.6.0"
@@ -3528,20 +3528,20 @@ universalify@^2.0.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
 
-unleash-client@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-5.0.0.tgz#b6725723b38f5572b4b1c5261c1bb2254148ec58"
-  integrity sha512-9x3SOpHTnMDY0CosKwy/0Hi9gIjw65+i2fsC76bvYaUIVTlqDoPdCfosBokNIZ/IjCF0TjEgSZefSWNGY5SC9A==
+unleash-client@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-5.3.2.tgz#d4612d6893b2175fd23a038c85c9deaf2d60a1af"
+  integrity sha512-0iR0bzvWoJSuLPr9VKQhu1qr2jV3UeXcnMJylTzeeZWNhD6dxQSYS1bVl1wGhTRo/ucXnk5Lx66zmreIqojp8Q==
   dependencies:
     ip "^1.1.8"
     make-fetch-happen "^10.2.1"
     murmurhash3js "^3.0.1"
     semver "^7.5.3"
 
-unleash-server@5.8.2:
-  version "5.8.2"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-5.8.2.tgz#0ef320d338b272be6e44f0dd27a7e1dcf343b5dc"
-  integrity sha512-5IPmRWVBrJJ248SBOeKVOAmzPipRN9wc0gFYBRdJLlSH6gYYHsfm9r0cYh7me3Z9W4h2E0PPKzAW621H6cpK4g==
+unleash-server@5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-5.9.0.tgz#148ce771dacd9040d8695efd62d275815055f6a3"
+  integrity sha512-ul4JgKHepZbQcD1LMe4ndSYUbYRckGgSXTGgLAhMN7j1zDPaoI/iSZUbMoHKG43ELphVGT9Zqn59Pf6CFP5YHA==
   dependencies:
     "@slack/web-api" "^6.10.0"
     "@wesleytodd/openapi" "^0.3.0"
@@ -3572,7 +3572,7 @@ unleash-server@5.8.2:
     joi "^17.3.0"
     js-sha256 "^0.10.0"
     js-yaml "^4.1.0"
-    json-schema-to-ts "2.9.2"
+    json-schema-to-ts "2.12.0"
     json2csv "^5.0.7"
     knex "^2.5.1"
     lodash.get "^4.4.2"
@@ -3600,7 +3600,7 @@ unleash-server@5.8.2:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
-    unleash-client "5.0.0"
+    unleash-client "5.3.2"
     uuid "^9.0.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
