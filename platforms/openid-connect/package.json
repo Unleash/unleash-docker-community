@@ -14,6 +14,6 @@
   "dependencies": {
     "passport": "^0.7.0",
     "passport-openidconnect": "^0.1.1",
-    "unleash-server": "5.9.0"
+    "unleash-server": "5.9.1"
   }
 }
