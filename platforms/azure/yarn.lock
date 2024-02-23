@@ -1574,6 +1574,11 @@ ip@^1.1.5, ip@^1.1.8:
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.9.tgz#8dfbcc99a754d07f425310b86a99546b1151e396"
   integrity sha512-cyRxvOEpNHNtchU3Ln9KC/auJgup87llfQpQ+t5ghoC/UhL16SWzbueiCsdTnWmqAWl7LadfuwhlqmtOaqMHdQ==
 
+ip@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-2.0.1.tgz#e8f3595d33a3ea66490204234b77636965307105"
+  integrity sha512-lJUL9imLTNi1ZfXT+DU6rBBdbiKGBuay9B6xGSPVjUeQwaH1RIGqef8RZkUtHioLmSNpPR5M4HVKJGm1j8FWVQ==
+
 ipaddr.js@1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.1.tgz#bff38543eeb8984825079ff3a2a8e6cbd46781b3"
@@ -3533,10 +3538,10 @@ unleash-client@5.3.2:
     murmurhash3js "^3.0.1"
     semver "^7.5.3"
 
-unleash-server@5.9.4:
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-5.9.4.tgz#be511ec1000c895d957648e07a542e154ef89ec4"
-  integrity sha512-dKci+LkXepNrDgRDOuUsDqZ/dFpjy2TKa+3Kisa/iDu02jUS6iCO2xdFl4qsDhvGgqn8QMiWPdiZWqPrxlbNmg==
+unleash-server@5.9.6:
+  version "5.9.6"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-5.9.6.tgz#3977124c047966b9d9f2803794cd7ff34daf4b20"
+  integrity sha512-6J8be//iQa/bxYrYRDMWI12swTT4k54OScfIBVwAeATh6gkvmWLl6gUOeFg2tnTb12nfPH8+iuycz99mj7PAgA==
   dependencies:
     "@slack/web-api" "^6.10.0"
     "@wesleytodd/openapi" "^0.3.0"
@@ -3563,7 +3568,7 @@ unleash-server@5.9.4:
     hash-sum "^2.0.0"
     helmet "^6.0.0"
     http-errors "^2.0.0"
-    ip "^1.1.8"
+    ip "^2.0.1"
     joi "^17.3.0"
     js-sha256 "^0.10.0"
     js-yaml "^4.1.0"
