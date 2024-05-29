@@ -68,7 +68,8 @@ This will automatically trigger a github actions which will build the new tag an
 
 ## Looking for SSO and coming from https://github.com/Unleash/helm-charts ?
 
-The old way of configuring SSO with a custom index.js in a config-map is no longer needed. These images handle the custom index.js file for you. However, you will have to configure environment variables (probably better to use secrets) as documented further up. For both Azure and OpenID the three environment variables you'll need are
+The old way of configuring SSO with a custom index.js in a config-map is no longer needed. These images handle the custom index.js file for you. However, you will have to configure environment variables (probably better to use secrets) as documented further up. For both Azure and OpenID the three environment variables you'll need are:
+
 * UNLEASH_AUTH_TENANT_ID
 * UNLEASH_AUTH_CLIENT_ID
 * UNLEASH_AUTH_CLIENT_SECRET
