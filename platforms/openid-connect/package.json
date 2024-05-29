@@ -7,13 +7,13 @@
     "test:ci": "echo 'no tests for unleash-docker'"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=20"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "passport": "^0.7.0",
-    "passport-openidconnect": "^0.1.1",
+    "passport-openidconnect": "^0.1.2",
     "unleash-server": "5.12.4"
   }
 }
