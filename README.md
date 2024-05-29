@@ -43,23 +43,34 @@ All configuration options [available in our documentation](https://docs.getunlea
 - Once started up, you'll have to use the OIDC provider with your credentials.
 
 ### Building the docker image
-We expect a build-arg for which node-version to build with so if you're building using the docker cli, you have to use `--build-arg NODE_VERSION=14-alpine` OR `--build-arg NODE_VERSION=16-alpine`
+
+Since Unleash v6.0.0 requires Node 20, use `--build-arg NODE_VERSION=20-alpine` when building
 
 ## Upgrade version
 When we upgrade the `unleash-version` this project should be tagged with the same version number.
 
 ```bash
-git tag -a 3.7.0 -m "upgrade to unleash-server 3.7.0"
+git tag -a 6.0.0 -m "upgrade to unleash-server 6.0.0"
 git push origin main --follow-tags
 ```
 
 You might also want to update the minor tag:
 
 ```bash
-git tag -d 3.7
-git push origin :3.7
-git tag -a 3.7 -m "Update 3.7 tag"
+git tag -d 6.0
+git push origin :6.0
+git tag -a 6.0 -m "Update 6.0 tag"
 git push origin main --follow-tags
 ```
 
 This will automatically trigger a github actions which will build the new tag and push it to docker-hub. 
+
+
+## Looking for SSO and coming from https://github.com/Unleash/helm-charts ?
+
+The old way of configuring SSO with a custom index.js in a config-map is no longer needed. These images handle the custom index.js file for you. However, you will have to configure environment variables (probably better to use secrets) as documented further up. For both Azure and OpenID the three environment variables you'll need are:
+
+* UNLEASH_AUTH_TENANT_ID
+* UNLEASH_AUTH_CLIENT_ID
+* UNLEASH_AUTH_CLIENT_SECRET
+

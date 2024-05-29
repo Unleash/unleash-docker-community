@@ -10,7 +10,6 @@ jobs:
     strategy:
       matrix:
         version:
-          - 18-alpine
           - 20-alpine
         folder:
           - azure

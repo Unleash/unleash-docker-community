@@ -58,4 +58,4 @@ jobs:
           cache-to: type=gha,mode=max
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            NODE_VERSION=18-alpine
+            NODE_VERSION=20-alpine
