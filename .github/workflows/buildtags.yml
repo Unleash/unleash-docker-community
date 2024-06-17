@@ -48,7 +48,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}},value=${{ steps.retrieve-version.outputs.major }}.${{ steps.retrieve-version.outputs.minor }}
             type=semver,pattern={{major}},value=${{ steps.retrieve-version.outputs.major }}
       - name: Build tag and push image to Docker hub
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           platforms: linux/amd64,linux/arm64
           push: true
