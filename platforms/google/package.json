@@ -1,0 +1,19 @@
+{
+  "name": "unleash-docker",
+  "description": "Docker images for unleash.",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "test:ci": "echo 'no tests for unleash-docker'"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@passport-next/passport": "^3.1.0",
+    "passport-google-oidc": "^0.1.0",
+    "unleash-server": "^6.0.0"
+  }
+}

@@ -12,6 +12,7 @@ jobs:
       matrix:
         folder:
           - azure
+          - google
           - openid-connect
     steps:
       - name: Checkout
