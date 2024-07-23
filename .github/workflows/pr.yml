@@ -11,6 +11,7 @@ jobs:
           - 20-alpine
         folder:
           - azure
+          - google
           - openid-connect
     steps:
       - name: Checkout
