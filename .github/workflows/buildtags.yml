@@ -18,6 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - id: retrieve-version
+        name: Retrieve version
         run: |
           PACKAGE_VERSION=$(cat platforms/${{ matrix.folder }}/package.json \
           | grep unleash-server \
@@ -26,9 +27,11 @@ jobs:
           | sed 's/[", ]//g')
           MAJOR=$(echo $PACKAGE_VERSION | cut -d. -f1)
           MINOR=$(echo $PACKAGE_VERSION | cut -d. -f2)
+          set -x
           echo "::set-output name=version::${PACKAGE_VERSION}"
           echo "::set-output name=major::${MAJOR}"
           echo "::set-output name=minor::${MINOR}"
+          set +x
       - name: Setup QEmu so we can build multiplatform
         uses: docker/setup-qemu-action@v3
       - name: Login to docker hub
