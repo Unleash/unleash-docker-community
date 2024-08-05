@@ -3654,7 +3654,7 @@ unleash-client@5.5.3:
     murmurhash3js "^3.0.1"
     semver "^7.5.3"
 
-unleash-server@^6.0.0:
+unleash-server@6.0.6:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.0.6.tgz#3bbfdc852016624c108ad19b65157e0ecd3a4732"
   integrity sha512-6dWKtX1soCGXYlBH0O2u4XqppHlTsC96oNxSmlbwq0ba2T5O5AkxeZbX+8ydoQSaY0lsJpwnkKcQOS/fk73S6w==
