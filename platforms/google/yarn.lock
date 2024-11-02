@@ -1272,6 +1272,11 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
+ip-address@^10.0.0:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-10.0.1.tgz#a8180b783ce7788777d796286d61bce4276818ed"
+  integrity sha512-NWv9YLW4PoW2B7xtzaS3NCot75m6nK7Icdv0o3lfMceJVRfSoQwqD4wEH5rLwoKJwUiZ/rfpiVBhnaF0FK4HoA==
+
 ip-address@^9.0.5:
   version "9.0.5"
   resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-9.0.5.tgz#117a960819b08780c3bd1f14ef3c1cc1d3f3ea5a"
@@ -1279,11 +1284,6 @@ ip-address@^9.0.5:
   dependencies:
     jsbn "1.1.0"
     sprintf-js "^1.1.3"
-
-ip@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/ip/-/ip-2.0.1.tgz#e8f3595d33a3ea66490204234b77636965307105"
-  integrity sha512-lJUL9imLTNi1ZfXT+DU6rBBdbiKGBuay9B6xGSPVjUeQwaH1RIGqef8RZkUtHioLmSNpPR5M4HVKJGm1j8FWVQ==
 
 ipaddr.js@1.9.1:
   version "1.9.1"
@@ -2649,10 +2649,10 @@ universalify@^0.1.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
-unleash-client@6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-6.1.1.tgz#0a53f2646f100c098708b860aa0b7991f0986e39"
-  integrity sha512-nAQw4SDjPd1J7JN6KD9o+5R1zhGOVhdbAWbpwXwhCi25ofpQVLpsVMpJvaztog1EZUrRd7oZcS21zvrrqZpP9A==
+unleash-client@6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-6.1.2.tgz#25630572df6e2a2de0954fb3cc2c1f59b13dfbdd"
+  integrity sha512-pWvaM8LhwpLtCTDYCVwY1tdHAWFUX9XtQymw4Ln6173+i2zhfdmyyg+ZFFBaET96iSjqvLMKCfte92VWeaNsDA==
   dependencies:
     http-proxy-agent "^7.0.2"
     https-proxy-agent "^7.0.5"
@@ -2661,10 +2661,10 @@ unleash-client@6.1.1:
     murmurhash3js "^3.0.1"
     semver "^7.6.2"
 
-unleash-server@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.3.0.tgz#ad1e090fba0221e99611b1349260f60219dd0417"
-  integrity sha512-etmUgG1SsSNic7y7zUe9Kow0OLTxWdMSji8lZAcDBD/HrxNR46HMx+bSmndAY5l9SxRWCa/z4XsXMxlw5vAg/w==
+unleash-server@6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.4.1.tgz#6af341390ca189690ebd504cf2e6aa8f1bce9f87"
+  integrity sha512-q85PJid9qhzIPUtPI95hws24qj7FX+ap9Ys0SDC3L9HZjEoUngpzO6KnwXcRaMWcvjWHHMTXEEAlzjHJMRrg5w==
   dependencies:
     "@slack/web-api" "^7.3.4"
     "@wesleytodd/openapi" "^1.1.0"
@@ -2691,7 +2691,7 @@ unleash-server@6.3.0:
     hash-sum "^2.0.0"
     helmet "^6.0.0"
     http-errors "^2.0.0"
-    ip "^2.0.1"
+    ip-address "^10.0.0"
     joi "^17.13.3"
     js-sha256 "^0.11.0"
     js-yaml "^4.1.0"
@@ -2724,7 +2724,7 @@ unleash-server@6.3.0:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
-    unleash-client "6.1.1"
+    unleash-client "6.1.2"
     uuid "^9.0.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
