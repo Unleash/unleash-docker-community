@@ -2712,10 +2712,10 @@ universalify@^0.1.0:
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 
-unleash-client@6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-6.1.2.tgz#25630572df6e2a2de0954fb3cc2c1f59b13dfbdd"
-  integrity sha512-pWvaM8LhwpLtCTDYCVwY1tdHAWFUX9XtQymw4Ln6173+i2zhfdmyyg+ZFFBaET96iSjqvLMKCfte92VWeaNsDA==
+unleash-client@6.1.3:
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/unleash-client/-/unleash-client-6.1.3.tgz#b32cc2d36802dbac3790b6646232a1fa93948fd0"
+  integrity sha512-L3aHxEzKbUBdQsE8gw741OlGQwWLnsx6HTrzydsnd8L2OBxwc9tzxRgBTjpKyELrHgfj4Q3u9nvuhjrVJ/jazA==
   dependencies:
     http-proxy-agent "^7.0.2"
     https-proxy-agent "^7.0.5"
@@ -2724,10 +2724,10 @@ unleash-client@6.1.2:
     murmurhash3js "^3.0.1"
     semver "^7.6.2"
 
-unleash-server@6.4.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.4.1.tgz#6af341390ca189690ebd504cf2e6aa8f1bce9f87"
-  integrity sha512-q85PJid9qhzIPUtPI95hws24qj7FX+ap9Ys0SDC3L9HZjEoUngpzO6KnwXcRaMWcvjWHHMTXEEAlzjHJMRrg5w==
+unleash-server@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.5.0.tgz#6560187f6042e9de7b7d9b97a69b96bfc562041f"
+  integrity sha512-F5aLAYsrJoJftPt2lRnl4Ke2tI2xfC5fspqE4DkCWAClP4GJzNLvh6t0qn5VvaG8T/RLFhVm9ijKD225E/v5Ag==
   dependencies:
     "@slack/web-api" "^7.3.4"
     "@wesleytodd/openapi" "^1.1.0"
@@ -2787,7 +2787,7 @@ unleash-server@6.4.1:
     stoppable "^1.1.0"
     ts-toolbelt "^9.6.0"
     type-is "^1.6.18"
-    unleash-client "6.1.2"
+    unleash-client "6.1.3"
     uuid "^9.0.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
