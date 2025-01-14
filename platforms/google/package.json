@@ -14,6 +14,6 @@
   "dependencies": {
     "@passport-next/passport": "^3.1.0",
     "passport-google-oidc": "^0.1.0",
-    "unleash-server": "6.5.2"
+    "unleash-server": "6.6.0"
   }
 }
