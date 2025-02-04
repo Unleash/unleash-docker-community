@@ -16,7 +16,7 @@
     "basic-auth": "^2.0.1",
     "passport": "^0.7.0",
     "passport-azure-ad": "^4.3.5",
-    "unleash-server": "6.5.2"
+    "unleash-server": "6.6.0"
   },
   "resolutions": {
     "async": "^3.2.3",
