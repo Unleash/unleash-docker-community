@@ -2743,10 +2743,10 @@ unleash-client@^6.4.0:
     proxy-from-env "^1.1.0"
     semver "^7.6.2"
 
-unleash-server@6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.6.0.tgz#5238c6fdee3bcbcacc1628fde60ee3debf8d31ff"
-  integrity sha512-nS/4AQic4rlp6eS0lfk3MhvoD1/7mTJzzSqrkuvu32YcuwmjHIswj1qC7dXP93JH3/CrFpkZc89LYe4bJuTidA==
+unleash-server@6.7.1:
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/unleash-server/-/unleash-server-6.7.1.tgz#9728179ed6e9efbeb2284a89b9f69b59bd0101e1"
+  integrity sha512-G6mYu+y2qMW0zaSEg0VS3B9I9EeW1V9fFnw/XzQcTgCUS1/g58Owk0AiHs6eHxtuvzq2fvTQw7tkmqtLfY0RuQ==
   dependencies:
     "@slack/web-api" "^7.3.4"
     "@wesleytodd/openapi" "^1.1.0"
