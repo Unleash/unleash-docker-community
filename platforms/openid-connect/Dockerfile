@@ -1,6 +1,6 @@
-ARG NODE_VERSION
+ARG NODE_VERSION=20.18.3-alpine
 
-FROM node:$NODE_VERSION as builder
+FROM node:$NODE_VERSION AS builder
 
 WORKDIR /unleash
 
@@ -8,9 +8,9 @@ COPY index.js package.json yarn.lock ./
 
 RUN yarn install --frozen-lockfile --production=true
 
-FROM node:$NODE_VERSION
+FROM node:$NODE_VERSION AS runner
 
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 WORKDIR /unleash
 
@@ -22,4 +22,4 @@ EXPOSE 4242
 
 USER node
 
-CMD node index.js
+CMD ["node", "index.js"]
