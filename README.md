@@ -82,3 +82,7 @@ For google, you'll need:
 * GOOGLE_CALLBACK_URL,
 
 OIDC is not implemented yet, but community contributions are welcome.
+
+> Warning
+>
+> The configured SSO providers grant all users that are allowed to login with the provider access to Unleash. This might not be what you want.
