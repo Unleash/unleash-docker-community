@@ -32,13 +32,13 @@ docker run -p 4242:4242 \
   -e UNLEASH_AUTH_TENANT_ID={AZURE_TENANT_ID} \
   -e UNLEASH_AUTH_CLIENT_ID={AZURE_CLIENT_ID} \
   -e UNLEASH_AUTH_CLIENT_SECRET={AZURE_CLIENT_SECRET} \
-  -e UNLEASH_HOST=http://localhost:4242 \
+  -e UNLEASH_URL=http://localhost:4242 \
   -v $(pwd)/index.js:/unleash/index.js \
   -v $(pwd)/azure-hook.js:/unleash/auth-hook.js \
   --network unleash unleashorg/unleash-community-azure
 ```
 
-All configuration options [available in our documentation](https://docs.getunleash.io/docs/deploy/configuring_unleash). 
+All configuration options [available in our documentation](https://docs.getunleash.io/docs/deploy/configuring_unleash).
 
 ### User accounts
 - Once started up, you'll have to use the OIDC provider with your credentials.
@@ -64,14 +64,21 @@ git tag -a 6.0 -m "Update 6.0 tag"
 git push origin main --follow-tags
 ```
 
-This will automatically trigger a github actions which will build the new tag and push it to docker-hub. 
+This will automatically trigger a github actions which will build the new tag and push it to docker-hub.
 
 
 ## Looking for SSO and coming from https://github.com/Unleash/helm-charts ?
 
-The old way of configuring SSO with a custom index.js in a config-map is no longer needed. These images handle the custom index.js file for you. However, you will have to configure environment variables (probably better to use secrets) as documented further up. For both Azure and OpenID the three environment variables you'll need are:
+The old way of configuring SSO with a custom index.js in a config-map is no longer needed. These images handle the custom index.js file for you.
+However, you will have to configure environment variables (probably better to use secrets) as documented further up. For Azure the three environment variables you'll need are:
 
 * UNLEASH_AUTH_TENANT_ID
 * UNLEASH_AUTH_CLIENT_ID
 * UNLEASH_AUTH_CLIENT_SECRET
 
+For google, you'll need:
+* GOOGLE_CLIENT_ID,
+* GOOGLE_CLIENT_SECRET,
+* GOOGLE_CALLBACK_URL,
+
+OIDC is not implemented yet, but community contributions are welcome.
