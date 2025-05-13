@@ -1,7 +1,7 @@
 "use strict";
 
 const unleash = require("unleash-server");
-const enableGoogleOAuth = require("./enable-google-oauth");
+const enableGoogleOAuth = require("./google-auth-hook");
 
 let options = {
   authentication: {

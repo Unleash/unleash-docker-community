@@ -4,7 +4,7 @@ FROM node:$NODE_VERSION AS builder
 
 WORKDIR /unleash
 
-COPY index.js package.json yarn.lock ./
+COPY google-auth-hook.js index.js package.json yarn.lock ./
 
 RUN yarn install --frozen-lockfile --production=true
 
