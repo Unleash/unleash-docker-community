@@ -1,3 +1,7 @@
+# This repository is no longer maintained
+
+Unleash docker images are available in https://hub.docker.com/r/unleashorg/unleash-server
+
 ## Use Unleash Docker Image
 
 
